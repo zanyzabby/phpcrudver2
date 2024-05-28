@@ -1,0 +1,143 @@
+body {
+    background-color: #f8f9fa;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+.card {
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px auto;
+    border: 3px solid #007bff;
+}
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #343a40;
+}
+.card-text {
+    color: #6c757d;
+}
+.btn {
+    margin: 5px;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    height: auto;
+    padding: 20px;  
+  }
+
+  .error-input {
+    border: 1px solid red !important;
+}
+
+.form-label {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+  }
+  
+  .form-control {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+  }
+
+  .login-heading {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #333; /* Adjust the color as per your design */
+  }
+
+  .form-section {
+    display: none;
+  }
+  .current-section {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    height: auto;
+    padding: 20px;  
+    
+  }
+.custom-container{
+  margin-top: 100px;
+  width: 500px;
+  
+}
+
+/* /user information stylesheet */
+
+.user-info {
+  margin: 0 auto;
+  margin-top: 100px;
+  height: auto;
+  padding: 20px; 
+
+}
+.list-group-item-icon {
+  margin-right: 10px;
+}
+.list-group-item-success {
+  background-color: #d4edda !important;
+}
+.list-group-item-danger {
+  background-color: #f8d7da !important;
+}
+
+.custom-container{
+  width: 800px;
+}
+body{
+font-family: 'Roboto', sans-serif;
+}
+/* Custom styling for print starts here */
+
+/* This CSS ensures that only the table is visible when printing, hiding all other elements on the page. The no-print class can be added to elements you don't want to show in the printout. For example, if you want to hide the search input and pagination during printing, add the no-print class to those elements. */
+
+@media print {
+  body * {
+      visibility: hidden;
+  }
+  #userTable, #userTable * {
+      visibility: visible;
+  }
+  #userTable {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      border: 1px solid #000;
+  }
+  .no-print {
+      display: none;
+  }
+  .table-bordered th, .table-bordered td {
+      border: 1px solid #000 !important;
+  }
+}
+
+/* Custom styling for print ends here */
+
+
